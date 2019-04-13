@@ -1,0 +1,335 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<head>
+
+</head>
+<body>
+	<ui:composition template="template.xhtml">
+		<ui:define name="headt">
+			<style>
+.container.no-header {
+	padding-top: 0px !important;
+	padding-bottom: 70px;
+}
+
+@media screen and (max-width : 700px) {
+	.pal {
+		padding-top: 20px !important;
+	}
+	br {
+		display: none !important;
+	}
+	.nav>li>a {
+		position: relative;
+		display: block;
+		padding: 8px !important;
+		padding-top: 8px;
+	}
+	.nav-tabs>li>a {
+		border-radius: 0;
+		font-size: 10px !important;
+		font-weight: 600;
+		font-family: "Montserrat", Arial, Helvetica, sans-serif;
+		color: #2b2b2b;
+		background: #fff;
+		background-color: rgb(255, 255, 255);
+		border: 0;
+		width: auto;
+		height: 25px !important;
+		padding-top: 0px !important;
+		margin: 0 0px;
+		opacity: 0.6;
+	}
+	.nav-tabs {
+		margin-bottom: 20px !important;
+		padding-left: 0px;
+		padding-top: 10px;
+		text-align: center;
+	}
+	.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3,
+		.col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9,
+		.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3,
+		.col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9,
+		.col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3,
+		.col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9,
+		.col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3,
+		.col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+		position: relative;
+		min-height: 1px;
+		padding-right: 0px !important;
+		padding-left: 0px !important;
+		padding-bottom: 20px !important;
+		padding-top: 20px;
+	}
+}
+</style>
+		</ui:define>
+		<ui:define name="main">
+			<div class="content-wrapper">
+				<div id="content">
+
+					<section class="white">
+					<div class="container clearfix no-header">
+						<div class="col-lg-12">
+							<ul class="nav nav-tabs" role="tablist">
+								<li role="presentation"><a href="agency.html#sixth"
+									role="tab" id="sixth-tab" data-toggle="tab"
+									aria-controls="sixth">سفیران آرامش</a></li>
+								<li role="presentation"><a href="agency.html#seventh"
+									role="tab" id="seventh-tab" data-toggle="tab"
+									aria-controls="seventh">حامیان آرامش</a></li>
+								<li role="presentation" class="active"><a
+									href="agency.html#eight" role="tab" id="eight-tab"
+									data-toggle="tab" aria-controls="eight">یاران</a></li>
+							</ul>
+							<div class="tab-content">
+								<div role="tabpanel" class="tab-pane fade" id="sixth"
+									aria-labelledBy="sixth-tab"></div>
+								<div role="tabpanel" class="tab-pane fade" id="seventh"
+									aria-labelledBy="seventh-tab"></div>
+								<div role="tabpanel" class="tab-pane fade in active" id="eight"
+									aria-labelledBy="eight-tab">
+									<div class="row">
+										<div class="col-md-4 pal" style="text-align: center;">
+											<img src="resources/images/yaran/h1.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+
+										</div>
+										<div class="col-md-4" style="text-align: center;">
+											<img src="resources/images/yaran/h2.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+										<div class="col-md-4" style="text-align: center;">
+											<img src="resources/images/yaran/h3.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+									</div>
+									<br />
+									<div class="row">
+										<div class="col-md-4 pal" style="text-align: center;">
+											<img src="resources/images/yaran/h4.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+										<div class="col-md-4" style="text-align: center;">
+											<img src="resources/images/yaran/h5.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+										<div class="col-md-4" style="text-align: center;">
+											<img src="resources/images/yaran/h6.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+									</div>
+									<br />
+									<div class="row">
+										<div class="col-md-4 pal" style="text-align: center;">
+											<img src="resources/images/yaran/h7.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+										<div class="col-md-4" style="text-align: center;">
+											<img src="resources/images/yaran/h8.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+										<div class="col-md-4" style="text-align: center;">
+											<img src="resources/images/yaran/h9.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+									</div>
+									<br />
+									<div class="row">
+										<div class="col-md-4 pal" style="text-align: center;">
+											<img src="resources/images/yaran/h10.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+										<div class="col-md-4" style="text-align: center;">
+											<img src="resources/images/yaran/h11.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+										<div class="col-md-4" style="text-align: center;">
+											<img src="resources/images/yaran/h12.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+									</div>
+									<br />
+									<div class="row">
+										<div class="col-md-4 pal" style="text-align: center;">
+											<img src="resources/images/yaran/h13.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+										<div class="col-md-4" style="text-align: center;">
+											<img src="resources/images/yaran/h14.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+										<div class="col-md-4" style="text-align: center;">
+											<img src="resources/images/yaran/h15.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+									</div>
+									<br />
+									<div class="row">
+										<div class="col-md-4 pal" style="text-align: center;">
+											<img src="resources/images/yaran/h16.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+										<div class="col-md-4" style="text-align: center;">
+											<img src="resources/images/yaran/h17.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+										<div class="col-md-4" style="text-align: center;">
+											<img src="resources/images/yaran/h18.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+									</div>
+									<br />
+									<div class="row">
+										<div class="col-md-4 pal" style="text-align: center;">
+											<img src="resources/images/yaran/h19.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+										<div class="col-md-4" style="text-align: center;">
+											<img src="resources/images/yaran/h20.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+										<div class="col-md-4" style="text-align: center;">
+											<img src="resources/images/yaran/h21.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+									</div>
+									<br />
+									<div class="row">
+										<div class="col-md-4 pal" style="text-align: center;">
+											<img src="resources/images/yaran/h22.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+										<div class="col-md-4" style="text-align: center;">
+											<img src="resources/images/yaran/h23.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+										<div class="col-md-4" style="text-align: center;">
+											<img src="resources/images/yaran/h24.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+									</div>
+									<br />
+									<div class="row">
+										<div class="col-md-4 pal" style="text-align: center;">
+											<img src="resources/images/yaran/h25.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+										<div class="col-md-4" style="text-align: center;">
+											<img src="resources/images/yaran/h26.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+										<div class="col-md-4" style="text-align: center;">
+											<img src="resources/images/yaran/h27.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+									</div>
+									<br />
+									<div class="row">
+										<div class="col-md-4 pal" style="text-align: center;">
+											<img src="resources/images/yaran/h28.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+										<div class="col-md-4" style="text-align: center;">
+											<img src="resources/images/yaran/h29.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+										<div class="col-md-4" style="text-align: center;">
+											<img src="resources/images/yaran/h30.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+									</div>
+									<br />
+									<div class="row">
+										<div class="col-md-4 pal" style="text-align: center;">
+											<img src="resources/images/yaran/h31.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+										<div class="col-md-4" style="text-align: center;">
+											<img src="resources/images/yaran/h32.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+										<div class="col-md-4" style="text-align: center;">
+											<img src="resources/images/yaran/h33.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+									</div>
+									<br />
+									<div class="row">
+										<div class="col-md-4 pal" style="text-align: center;">
+											<img src="resources/images/yaran/h34.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+										<div class="col-md-4" style="text-align: center;">
+											<img src="resources/images/yaran/h35.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+										<div class="col-md-4" style="text-align: center;">
+											<img src="resources/images/yaran/h36.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+									</div>
+									<br />
+									<div class="row">
+										<div class="col-md-4 pal" style="text-align: center;">
+											<img src="resources/images/yaran/v1.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+										<div class="col-md-4" style="text-align: center;">
+											<img src="resources/images/yaran/v2.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+										<div class="col-md-4" style="text-align: center;">
+											<img src="resources/images/yaran/v3.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+									</div>
+									<br />
+									<div class="row">
+										<div class="col-md-4 pal" style="text-align: center;">
+											<img src="resources/images/yaran/v4.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+										<div class="col-md-4" style="text-align: center;">
+											<img src="resources/images/yaran/v5.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+										<div class="col-md-4" style="text-align: center;">
+											<img src="resources/images/yaran/v6.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+									</div>
+									<br />
+									<div class="row">
+										<div class="col-md-4 pal" style="text-align: center;">
+											<img src="resources/images/yaran/v7.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+										<div class="col-md-4" style="text-align: center;">
+											<img src="resources/images/yaran/v8.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+										<div class="col-md-4" style="text-align: center;">
+											<img src="resources/images/yaran/v9.jpg" alt=""
+												style="width: 300px !important; height: 250px !important; margin: auto;" />
+										</div>
+									</div>
+									<br />
+								</div>
+							</div>
+						</div>
+					</div>
+					</section>
+
+				</div>
+				<!-- end content -->
+			</div>
+			<!-- end content-wrapper -->
+		</ui:define>
+	</ui:composition>
+</body>
+</html>

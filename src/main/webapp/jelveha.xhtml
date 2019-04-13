@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui"> 
+
+<h:head></h:head> 
+<body> 
+<ui:composition template="template.xhtml">
+<ui:define name="headt">
+<style>
+.container.no-header {
+    padding-top: 35px !important;
+    padding-bottom: 70px;
+}
+audio, canvas, progress, video {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-bottom: 20px!important;
+}
+			@media  screen and (max-width : 700px)
+			{
+			audio, canvas, progress, video {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-bottom: 20px !important;
+    width: 100% !important;
+}
+			}
+</style>
+</ui:define>
+<ui:define name="main">
+<div class="content-wrapper">
+    <div id="content">
+           
+     <section class="white">
+        <div class="container clearfix no-header" id="dvali1" >
+          <div class="col-lg-12">
+          <div  class="tab-pane fade in active" id="eight">
+                <div class="row">
+                  <div class="col-md-4" style="text-align: center;">
+                            <b:video small-screen="two-thirds"
+                                     src="resources/video/new.mp4"
+                                     style="width:150%;height:150px!important;border:1px solid #d7b56d;"
+                                     tooltip="Video of Hawai provided by Apple (http://a1.phobos.apple.com/us/r1000/000/Features/atv/AutumnResources/videos/b1-1.mov)"
+                                     tooltip-position="right"
+                                     onplay="ajax:videoBean.onPlay()"
+                                     onpause="ajax:videoBean.onPause()"
+                                     onloadeddata="ajax:videoBean.onLoadedData()"
+                                     oncanplaythrough="ajax:videoBean.onCanplaythrough()"
+                                     onseeking="ajax:videoBean.onSeeking()"
+                                     update="@next">
+                            </b:video>
+                  </div>
+                  <div class="col-md-4" style="text-align: center;">
+                            <b:video small-screen="two-thirds"
+                                     src="resources/video/new1.mp4"
+                                     style="width:150%;height:150px!important;border:1px solid #d7b56d;"
+                                     tooltip="Video of Hawai provided by Apple (http://a1.phobos.apple.com/us/r1000/000/Features/atv/AutumnResources/videos/b1-1.mov)"
+                                     tooltip-position="right"
+                                     onplay="ajax:videoBean.onPlay()"
+                                     onpause="ajax:videoBean.onPause()"
+                                     onloadeddata="ajax:videoBean.onLoadedData()"
+                                     oncanplaythrough="ajax:videoBean.onCanplaythrough()"
+                                     onseeking="ajax:videoBean.onSeeking()"
+                                     update="@next">
+                            </b:video>
+                  </div>
+                                    <div class="col-md-4" style="text-align: center;">
+                            <b:video small-screen="two-thirds"
+                                     src="resources/video/new2.mp4"
+                                     style="width:150%;height:150px!important;border:1px solid #d7b56d;"
+                                     tooltip="Video of Hawai provided by Apple (http://a1.phobos.apple.com/us/r1000/000/Features/atv/AutumnResources/videos/b1-1.mov)"
+                                     tooltip-position="right"
+                                     onplay="ajax:videoBean.onPlay()"
+                                     onpause="ajax:videoBean.onPause()"
+                                     onloadeddata="ajax:videoBean.onLoadedData()"
+                                     oncanplaythrough="ajax:videoBean.onCanplaythrough()"
+                                     onseeking="ajax:videoBean.onSeeking()"
+                                     update="@next">
+                            </b:video>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4" style="text-align: center;">
+                            <b:video small-screen="two-thirds"
+                                     src="resources/video/new3.mp4"
+                                     style="width:150%;height:150px!important;border:1px solid #d7b56d;"
+                                     tooltip="Video of Hawai provided by Apple (http://a1.phobos.apple.com/us/r1000/000/Features/atv/AutumnResources/videos/b1-1.mov)"
+                                     tooltip-position="right"
+                                     onplay="ajax:videoBean.onPlay()"
+                                     onpause="ajax:videoBean.onPause()"
+                                     onloadeddata="ajax:videoBean.onLoadedData()"
+                                     oncanplaythrough="ajax:videoBean.onCanplaythrough()"
+                                     onseeking="ajax:videoBean.onSeeking()"
+                                     update="@next">
+                            </b:video>
+                  </div>
+                  <div class="col-md-4" style="text-align: center;">
+                            <b:video small-screen="two-thirds"
+                                     src="resources/video/new4.mp4"
+                                     style="width:150%;height:150px!important;border:1px solid #d7b56d;"
+                                     tooltip="Video of Hawai provided by Apple (http://a1.phobos.apple.com/us/r1000/000/Features/atv/AutumnResources/videos/b1-1.mov)"
+                                     tooltip-position="right"
+                                     onplay="ajax:videoBean.onPlay()"
+                                     onpause="ajax:videoBean.onPause()"
+                                     onloadeddata="ajax:videoBean.onLoadedData()"
+                                     oncanplaythrough="ajax:videoBean.onCanplaythrough()"
+                                     onseeking="ajax:videoBean.onSeeking()"
+                                     update="@next">
+                            </b:video>
+                  </div>
+                                    <div class="col-md-4" style="text-align: center;">
+                            <b:video small-screen="two-thirds"
+                                     src="resources/video/13new.mp4"
+                                     style="width:150%;height:150px!important;border:1px solid #d7b56d;"
+                                     tooltip="Video of Hawai provided by Apple (http://a1.phobos.apple.com/us/r1000/000/Features/atv/AutumnResources/videos/b1-1.mov)"
+                                     tooltip-position="right"
+                                     onplay="ajax:videoBean.onPlay()"
+                                     onpause="ajax:videoBean.onPause()"
+                                     onloadeddata="ajax:videoBean.onLoadedData()"
+                                     oncanplaythrough="ajax:videoBean.onCanplaythrough()"
+                                     onseeking="ajax:videoBean.onSeeking()"
+                                     update="@next">
+                            </b:video>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4" style="text-align: center;">
+                            <b:video small-screen="two-thirds"
+                                     src="resources/video/14new.mp4"
+                                     style="width:150%;height:150px!important;border:1px solid #d7b56d;"
+                                     tooltip="Video of Hawai provided by Apple (http://a1.phobos.apple.com/us/r1000/000/Features/atv/AutumnResources/videos/b1-1.mov)"
+                                     tooltip-position="right"
+                                     onplay="ajax:videoBean.onPlay()"
+                                     onpause="ajax:videoBean.onPause()"
+                                     onloadeddata="ajax:videoBean.onLoadedData()"
+                                     oncanplaythrough="ajax:videoBean.onCanplaythrough()"
+                                     onseeking="ajax:videoBean.onSeeking()"
+                                     update="@next">
+                            </b:video>
+                  </div>
+                  <div class="col-md-4" style="text-align: center;">
+                            <b:video small-screen="two-thirds"
+                                     src="resources/video/15new.mp4"
+                                     style="width:150%;height:150px!important;border:1px solid #d7b56d;"
+                                     tooltip="Video of Hawai provided by Apple (http://a1.phobos.apple.com/us/r1000/000/Features/atv/AutumnResources/videos/b1-1.mov)"
+                                     tooltip-position="right"
+                                     onplay="ajax:videoBean.onPlay()"
+                                     onpause="ajax:videoBean.onPause()"
+                                     onloadeddata="ajax:videoBean.onLoadedData()"
+                                     oncanplaythrough="ajax:videoBean.onCanplaythrough()"
+                                     onseeking="ajax:videoBean.onSeeking()"
+                                     update="@next">
+                            </b:video>
+                  </div>
+                                    <div class="col-md-4" style="text-align: center;">
+                            <b:video small-screen="two-thirds"
+                                     src="resources/video/16new.mp4"
+                                     style="width:150%;height:150px!important;border:1px solid #d7b56d;"
+                                     tooltip="Video of Hawai provided by Apple (http://a1.phobos.apple.com/us/r1000/000/Features/atv/AutumnResources/videos/b1-1.mov)"
+                                     tooltip-position="right"
+                                     onplay="ajax:videoBean.onPlay()"
+                                     onpause="ajax:videoBean.onPause()"
+                                     onloadeddata="ajax:videoBean.onLoadedData()"
+                                     oncanplaythrough="ajax:videoBean.onCanplaythrough()"
+                                     onseeking="ajax:videoBean.onSeeking()"
+                                     update="@next">
+                            </b:video>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4" style="text-align: center;">
+                            <b:video small-screen="two-thirds"
+                                     src="resources/video/8new.mp4"
+                                     style="width:150%;height:150px!important;border:1px solid #d7b56d;"
+                                     tooltip="Video of Hawai provided by Apple (http://a1.phobos.apple.com/us/r1000/000/Features/atv/AutumnResources/videos/b1-1.mov)"
+                                     tooltip-position="right"
+                                     onplay="ajax:videoBean.onPlay()"
+                                     onpause="ajax:videoBean.onPause()"
+                                     onloadeddata="ajax:videoBean.onLoadedData()"
+                                     oncanplaythrough="ajax:videoBean.onCanplaythrough()"
+                                     onseeking="ajax:videoBean.onSeeking()"
+                                     update="@next">
+                            </b:video>
+                  </div>
+                 
+                                    
+                </div>
+              </div>
+          </div>
+          </div>
+          </section>
+          </div>
+          </div>
+</ui:define>
+</ui:composition>
+</body> 
+</html>

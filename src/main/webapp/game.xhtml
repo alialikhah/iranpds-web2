@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head></h:head>
+<body>
+	<ui:composition template="template.xhtml">
+		<ui:define name="headt">
+			<style>
+.nav-tabs {
+	margin-bottom: 45px;
+	padding-left: 0px;
+	padding-top: 10px;
+	text-align: center;
+	float: right !important;
+	width: 100% !important;
+	direction: rtl !important;
+}
+
+.nav-tabs>li>a {
+	border-radius: 0;
+	font-size: 10px !important;
+	font-weight: 600;
+	font-family: "Montserrat", Arial, Helvetica, sans-serif;
+	color: #2b2b2b;
+	background: #fff;
+	border: 0;
+	width: auto;
+	height: 88px;
+	padding-top: 58px;
+	margin: 0 10px;
+	opacity: 0.6;
+}
+
+.container.no-header {
+	padding-top: 0px !important;
+	padding-bottom: 70px;
+}
+
+.nav-tabs li a#second-tab {
+	background: none !important;
+	background-size: auto auto;
+	background-size: 48px 48px;
+}
+
+.nav-tabs li a#first-tab {
+	background: none !important;
+	background-size: auto auto;
+	background-size: 48px 48px;
+}
+
+.form-part {
+	padding: 0;
+	margin-top: 29px;
+	margin: auto !important;
+	width: 500px;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, p, h4, h5, h6, p,
+	blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+	em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup,
+	tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+	caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+	text-align: justify !important;
+}
+
+@media screen and (max-width : 700px) {
+	p {
+		padding-right: 0px !important;
+	}
+	p {
+		padding-right: 0px !important;
+		padding-left: 0px !important;
+	}
+	.nav-tabs>li>a {
+		border-radius: 0;
+		font-size: 10px !important;
+		font-weight: 600;
+		font-family: "Montserrat", Arial, Helvetica, sans-serif;
+		color: #2b2b2b;
+		background: #fff;
+		border: 0;
+		width: auto;
+		height: 10px !important;
+		padding-top: 10px !important;
+		margin: 0 10px;
+		opacity: 0.6;
+	}
+	.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover
+		{
+		color: #2b2b2b;
+		border: 0;
+		opacity: 1;
+		border-bottom: 0px solid #999 !important;
+	}
+	.nav-tabs {
+		margin-bottom: 45px;
+		padding-left: 0px;
+		padding-top: 2px !important;
+		text-align: center;
+	}
+	.nav>li>a {
+		position: relative;
+		display: block;
+		padding: 0px !important;
+		padding-top: 10px;
+	}
+	.nav-tabs {
+		margin-bottom: 5px !important;
+		padding-left: 0px;
+		padding-top: 2px !important;
+		text-align: center;
+	}
+	.form-part {
+		padding: 0;
+		margin-top: 29px;
+		margin: auto !important;
+		width: 200px !important;
+	}
+	.nav-tabs {
+		margin-bottom: 5px !important;
+		padding-left: 0px;
+		padding-top: 2px !important;
+		text-align: justify !important;
+	}
+	.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover
+		{
+		color: #2b2b2b;
+		border: 0;
+		border-bottom-width: 0px;
+		border-bottom-style: none;
+		border-bottom-color: currentcolor;
+		opacity: 1;
+		border-bottom: 0px solid #999 !important;
+		color: red;
+	}
+	.nav>li>a {
+		position: relative;
+		display: block;
+		padding: 0px !important;
+		padding-top: 10px;
+		color: green;
+	}
+}
+
+.iga {
+	width: 100px;
+	display: block;
+	max-width: 100%;
+	z-index: 9;
+	box-shadow: #fff 0 0 0;
+	-webkit-box-shadow: #fff 0 0 0;
+	margin: auto !important;
+	padding-bottom: 10px !important;
+}
+
+.pa {
+	font-family: 'IRANSansNor';
+	font-size: 20px;
+	color: #333333;
+	text-align: center !important;
+	direction: rtl !important;
+}
+</style>
+		</ui:define>
+		<ui:define name="main">
+		
+			<div class="content-wrapper">
+				<div id="content">
+
+					<section class="white">
+					<div class="container clearfix no-header" id="dvali1">
+						<div class="col-lg-12">
+
+							<div class="tab-content">
+
+
+								<div role="tabpanel" class="tab-pane fade in active" id="thrd"
+									aria-labelledBy="thrd-tab"><br/>
+	<div class="row">
+										<div class="col-md-3" style="text-align: center;">
+											<!--                    <p:media value="/resources/pdf/barasi.pdf" style="width:800px; height:600px;" />
+ -->
+											<a href="game1/index.html"><img class="iga"
+												src="resources/game/game1.png" width="100" height="100" />
+												<p class="pa">2048</p></a>
+										</div><br/>
+										<div class="col-md-3" style="text-align: center;">
+											<a href="game2/index.html"> <img class="iga"
+												src="resources/game/game2.png" width="100" height="100"/>
+												<p class="pa">پل هیجانی</p></a>
+										</div><br/>
+										<div class="col-md-3" style="text-align: center;">
+											<a href="game3/index.html"> <img class="iga"
+												src="resources/game/game3.png" width="100" height="100"/>
+												<p class="pa">رانندگی پر خطر</p></a>
+										</div><br/>
+										<div class="col-md-3" style="text-align: center;">
+											<a href="game4/index.html"> <img class="iga"
+												src="resources/game/game4.png" width="100" height="100"/>
+												<p class="pa">هدف دقیق</p></a>
+										</div>
+									</div>
+									<div class="row" style="direction: rtl;"><br/>
+										<div class="col-md-3" style="text-align: center;">
+											<!--                    <p:media value="/resources/pdf/barasi.pdf" style="width:800px; height:600px;" />
+ -->
+											<a href="game5/index.html"><img
+												class="iga" src="resources/game/game5.png" width="100" height="100" />
+												<p class="pa">هیجان در پیست</p></a>
+										</div>
+									</div>
+								</div>
+								
+								
+							
+							
+
+							</div>
+						</div>
+					</div>
+					</section>
+
+
+
+
+
+				</div>
+				<!-- end content -->
+			</div>
+			<!-- end content-wrapper -->
+		</ui:define>
+	</ui:composition>
+</body>
+</html>

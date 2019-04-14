@@ -1,0 +1,641 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+
+</h:head>
+<h:body>
+	<ui:composition template="template.xhtml">
+		<ui:define name="headt">
+
+
+			<style>
+.ui-inputfield {
+	margin: 0;
+	outline: medium none;
+	padding: 4px;
+	font-weight: normal;
+	width: -moz-available !important;
+	border-radius: 15px !important;
+}
+
+.ui-inputfield {
+	margin: 0;
+	outline: medium none;
+	padding: 4px;
+	font-weight: normal;
+	width: -moz-available !important;
+}
+
+.ui-inputfield, .ui-widget-content .ui-inputfield, .ui-widget-header .ui-inputfield
+	{
+	background: #fff;
+	-moz-box-shadow: inset 0 2px 2px #8f8f8f;
+	-webkit-box-shadow: inset 0 2px 2px #8f8f8f;
+	box-shadow: none !important;
+	color: #313131;
+}
+
+@media screen and (max-width : 700px) {
+	.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3,
+		.col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9,
+		.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3,
+		.col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9,
+		.col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3,
+		.col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9,
+		.col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3,
+		.col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+		position: relative;
+		min-height: 1px;
+		padding-right: 15px;
+		padding-left: 15px;
+		padding-bottom: 5px !important;
+	}
+}
+
+@media screen and (max-width : 992px) {
+	#ds1 {
+		display: none !important;
+	}
+	#ds2 {
+		display: block !important;
+	}
+}
+</style>
+		</ui:define>
+		<ui:define name="main">
+			<div class="content-wrapper" dir="rtl" id="ds1">
+				<div id="content">
+
+					<section class="white">
+					<div class="container clearfix no-header" id="dvali1">
+						<div class="col-lg-12" dir="rtl">
+							<div class="tab-pane fade in active" id="eight">
+								<h:form id="form">
+									<p:growl id="growl" />
+									<p:panel header="فرم ثبت نام عضو رسمی" id="pnl">
+										<div class="row" style="text-align: justify;">
+											<div class="col-md-12">
+												<p>جمعیت خوب رانان در راستای گسترش پویش مردمی به منظور
+													بهسازی رفتار ترافیکی و فرهنگ رانندگی و با هدف کاهش و
+													پیشگیری از حوادث تلخ و خسارات جانی ، مالی و آسیب های
+													اجتماعی ، همراهی و همگامی علاقه مندان به شرکت در این پویش
+													بزرگ ملی را ارج می نهد و دعوت می نماید چنانچه آماده مشارکت
+													در این حرکت فراگیر ملی می باشید ، با تکمیل پرسشـنامه زیر ،
+													به جمعیت خوب رانان به پیوندید.</p>
+											</div>
+										</div>
+
+
+										<div class="row">
+											<div class="col-md-3">
+												<p:inputText id="input" placeholder="محل تولد :"
+													style="font-family: 'IRANSansNor' !important;width: 100%; background-color: white!important;"
+													value="#{shoabBean.cityBirth}" rendered="true"
+													requiredMessage="فیلد اجباری">
+													<f:validateLength maximum="100" minimum="3" />
+												</p:inputText>
+											</div>
+ 											<div class="col-md-3">
+												<p:inputText placeholder="متولد :"
+													value="#{shoabBean.date}" required="true"
+													style="font-family: 'IRANSansNor' !important;width: 100%; background-color: white!important;"
+													requiredMessage="فیلد اجباری" dir="rtl" />
+											</div>
+
+											<div class="col-md-3">
+												<p:inputText id="input2" placeholder="فرزند :"
+													style="font-family: 'IRANSansNor' !important;width: 100%; background-color: white!important;"
+													value="#{shoabBean.father}" rendered="true"
+													requiredMessage="فیلد اجباری">
+													<f:validateLength maximum="100" minimum="3" />
+												</p:inputText>
+											</div>
+											<div class="col-md-3">
+												<p:inputText id="input3" placeholder="نام و نام خانوادگی :"
+													style="font-family: 'IRANSansNor' !important;width: 100%; background-color: white!important;"
+													value="#{shoabBean.name}" rendered="true"
+													requiredMessage="فیلد اجباری">
+													<f:validateLength maximum="100" minimum="3" />
+												</p:inputText>
+											</div>
+										</div>
+										<br />
+
+										<div class="row">
+											<div class="col-md-3">
+												<p:inputText id="input9" placeholder="رشته تحصیلی :"
+													style="font-family: 'IRANSansNor' !important;width: 100%; background-color: white!important;"
+													value="#{shoabBean.reshte}" rendered="true"
+													requiredMessage="فیلد اجباری">
+													<f:validateLength maximum="100" minimum="3" />
+												</p:inputText>
+											</div>
+											<div class="col-md-3">
+												<p:inputText id="input10" placeholder="مدرک تحصیلی :"
+													style="font-family: 'IRANSansNor' !important;width: 100%; background-color: white!important;"
+													value="#{shoabBean.madrak}" rendered="true"
+													requiredMessage="فیلد اجباری">
+													<f:validateLength maximum="100" minimum="3" />
+												</p:inputText>
+											</div>
+											<div class="col-md-3">
+												<p:inputMask mask="9999999999"
+													placeholder="شماره گواهینامه رانندگی :"
+													value="#{shoabBean.shomareGovahiName}" required="true"
+													style="font-family: 'IRANSansNor' !important;width: 100%; background-color: white!important;"
+													requiredMessage="فیلد اجباری" dir="rtl" />
+											</div>
+											<div class="col-md-3">
+												<p:inputMask mask="9999999999" placeholder="کد ملی :"
+													value="#{shoabBean.ssn}" required="true"
+													style="font-family: 'IRANSansNor' !important;width: 100%; background-color: white!important;"
+													requiredMessage="فیلد اجباری" dir="rtl" />
+											</div>
+										</div>
+										<br />
+
+
+
+										<div class="row">
+											<div class="col-md-4">
+												<p:inputMask mask="(999)99999999" placeholder="Phone :"
+													value="#{shoabBean.phone}" required="true" dir="ltr"
+													style="font-family: 'IRANSansNor' !important;width: 100%; background-color: white!important;"
+													requiredMessage="فیلد اجباری" />
+											</div>
+
+											<div class="col-md-4">
+												<p:inputMask mask="99999999999" placeholder="Mobile :"
+													value="#{shoabBean.mobile}" required="true" dir="ltr"
+													style="font-family: 'IRANSansNor' !important;width: 100%; background-color: white!important;"
+													requiredMessage="فیلد اجباری" />
+											</div>
+
+											<div class="col-md-4">
+												<p:inputText id="input95" placeholder="شغل :"
+													style="font-family: 'IRANSansNor' !important;width: 100%; background-color: white!important;"
+													value="#{shoabBean.shogl}" rendered="true"
+													requiredMessage="فیلد اجباری">
+													<f:validateLength maximum="100" minimum="3" />
+												</p:inputText>
+											</div>
+										</div>
+										<br />
+
+										<div class="row">
+											<div class="col-md-3">
+												<p:inputText id="input11" placeholder="بخش / روستا :"
+													style="font-family: 'IRANSansNor' !important;width: 100%; background-color: white!important;"
+													value="#{shoabBean.darBakhsh}" rendered="true"
+													requiredMessage="فیلد اجباری">
+													<f:validateLength maximum="100" minimum="3" />
+												</p:inputText>
+											</div>
+											<div class="col-md-3">
+												<p:inputText id="input12" placeholder="شهر :"
+													style="font-family: 'IRANSansNor' !important;width: 100%; background-color: white!important;"
+													value="#{shoabBean.darShahr}" rendered="true"
+													requiredMessage="فیلد اجباری">
+													<f:validateLength maximum="100" minimum="3" />
+												</p:inputText>
+											</div>
+											<div class="col-md-3">
+												<p:inputText id="input13" placeholder="شهرستان :"
+													style="font-family: 'IRANSansNor' !important;width: 100%; background-color: white!important;"
+													value="#{shoabBean.darShahrestan}" rendered="true"
+													requiredMessage="فیلد اجباری">
+													<f:validateLength maximum="100" minimum="3" />
+												</p:inputText>
+											</div>
+											<div class="col-md-3">
+												<p:inputText id="input14" placeholder="استان :"
+													style="font-family: 'IRANSansNor' !important;width: 100%; background-color: white!important;"
+													value="#{shoabBean.darOstan}" rendered="true"
+													requiredMessage="فیلد اجباری">
+													<f:validateLength maximum="100" minimum="3" />
+												</p:inputText>
+											</div>
+										</div>
+										<br />
+
+
+										<div class="row">
+											<div class="col-md-12">
+												<p:inputTextarea id="input8" placeholder="نشانی کامل :"
+													style="font-family: 'IRANSansNor' !important;width: 100%; background-color: white!important;"
+													value="#{shoabBean.addres}" rendered="true"
+													requiredMessage="فیلد اجباری">
+													<f:validateLength maximum="100" minimum="3" />
+												</p:inputTextarea>
+											</div>
+										</div>
+										<br />
+
+
+
+										<div class="row">
+											<div class="col-md-12">
+												<p>آمادگی خود را برای همکاری با جمعیت خوب رانان در زمینه
+													های ذیل اعلام می دارم .</p>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<p:selectManyCheckbox id="em" layout="responsive"
+													value="#{shoabBean.options}"
+													style="font-family: 'IRANSansNor'; color: #333333 !important; font-size:14px;"
+													columns="3">
+													<f:selectItem itemLabel="برنامه ریزی و مدیریت"
+														itemValue="برنامه ریزی و مدیریت" />
+													<f:selectItem itemLabel="تولید محتوا"
+														itemValue="تولید محتوا" />
+													<f:selectItem itemLabel="ترجمه" itemValue="ترجمه" />
+													<f:selectItem itemLabel="جذب اسپانسر"
+														itemValue="جذب اسپانسر" />
+													<f:selectItem itemLabel="جذب نیروی انسانی"
+														itemValue="جذب نیروی انسانی" />
+													<f:selectItem itemLabel="رسانه" itemValue="رسانه" />
+													<f:selectItem itemLabel="خلاقیت و ایده پردازی"
+														itemValue="خلاقیت و ایده پردازی" />
+													<f:selectItem itemLabel="حضور فیزیکی"
+														itemValue="حضور فیزیکی" />
+													<f:selectItem itemLabel="کمک غیر نقدی"
+														itemValue="کمک غیر نقدی" />
+													<f:selectItem itemLabel="کمک مالی" itemValue="کمک مالی" />
+													<f:selectItem itemLabel="تامین فضای استقرار شعبه"
+														itemValue="تامین فضای استقرار شعبه" />
+													<f:selectItem id="si"
+														itemLabel="هماهنگی و جذب همکاری مقامات محلی"
+														itemValue="هماهنگی و جذب همکاری مقامات محلی" />
+
+												</p:selectManyCheckbox>
+											</div>
+										</div>
+										<br />
+										<div class="row">
+											<div class="col-md-12">
+												<p:inputTextarea id="input955"
+													placeholder="مزید امتنان خواهد بود در خصوص موارد انتخابی برای همکاری ، توضیحات لازم را ارایه فرمایید."
+													style="font-family: 'IRANSansNor' !important;width: 100%; background-color: white!important;"
+													value="#{shoabBean.description}" rendered="true"
+													requiredMessage="فیلد اجباری">
+													<f:validateLength maximum="5000" minimum="3" />
+												</p:inputTextarea>
+											</div>
+										</div>
+										<br />
+										<div class="row">
+											<div class="row">
+												<div class="col-md-12">
+													<p>توجه !</p>
+												</div>
+											</div>
+										</div>
+										<br />
+										<div class="row">
+											<div class="row">
+												<div class="col-md-12">
+													<p>حق عضویت ماهیانه بر اساس مصوبه ۹۷/۰۹/۲۲ هیئت مدیره
+														ماهیانه یکصد هزار ریال است که لازم است به حساب شماره
+														۸۰۵۷۱۰۲۷۸۶۸۰۸۱ نزد بانک سامان به نام جمعیت خوب رانان واریز
+														گردد .</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-md-12">
+												<p>نحوه پرداخت :</p>
+											</div>
+										</div>
+
+
+										<div class="row">
+											<div class="row">
+												<div class="col-md-12">
+													<p:selectOneRadio id="customRadio22" layout="responsive"
+														columns="3" style="font-size:14px;" required="true"
+														value="#{shoabBean.nahve}" requiredMessage="فیلد اجباری">
+														<f:selectItem itemLabel="ماهیانه" itemValue="ماهیانه" />
+														<f:selectItem itemLabel="سه ماهه" itemValue="فصلی" />
+														<f:selectItem itemLabel="سالیانه" itemValue="سالیانه" />
+													</p:selectOneRadio>
+												</div>
+											</div>
+										</div>
+
+										<h:commandButton id="saveBtn" value="ثبت" icon="ui-icon-check"
+											style="margin:0; width:100px; height:30px; font-size:18px; padding-top:0px!important; background-color:darkblue; color:white;"
+											update="pnl" ajax="true" execute="@form"
+											action="#{shoabBean.insertToShoab()}">
+										</h:commandButton>
+									</p:panel>
+								</h:form>
+
+							</div>
+						</div>
+					</div>
+					</section>
+				</div>
+			</div>
+
+
+
+
+			<div class="content-wrapper" dir="ltr" id="ds2"
+				style="display: none;">
+				<div id="content">
+
+					<section class="white">
+					<div class="container clearfix no-header" id="dvali1">
+						<div class="col-lg-12" dir="rtl">
+							<div class="tab-pane fade in active" id="eight">
+								<h:form>
+									<p:growl id="growl" />
+									<p:panel header="فرم ثبت نام عضو رسمی" id="pnl">
+										<div class="row" style="text-align: justify;">
+											<div class="col-md-12">
+												<p>جمعیت خوب رانان در راستای گسترش پویش مردمی به منظور
+													بهسازی رفتار ترافیکی و فرهنگ رانندگی و با هدف کاهش و
+													پیشگیری از حوادث تلخ و خسارات جانی ، مالی و آسیب های
+													اجتماعی ، همراهی و همگامی علاقه مندان به شرکت در این پویش
+													بزرگ ملی را ارج می نهد و دعوت می نماید چنانچه آماده مشارکت
+													در این حرکت فراگیر ملی می باشید ، با تکمیل پرسشـنامه زیر ،
+													به جمعیت خوب رانان به پیوندید.</p>
+											</div>
+										</div>
+
+
+										<div class="row">
+											<div class="col-md-3">
+												<p:inputText id="input3" placeholder="نام و نام خانوادگی :"
+													style="font-family: 'IRANSansNor' !important;width: 100%; background-color: white!important;"
+													value="#{shoabBean.name}" rendered="true"
+													requiredMessage="فیلد اجباری">
+													<f:validateLength maximum="100" minimum="3" />
+												</p:inputText>
+											</div>
+											<div class="col-md-3">
+												<p:inputText id="input2" placeholder="فرزند :"
+													style="font-family: 'IRANSansNor' !important;width: 100%; background-color: white!important;"
+													value="#{shoabBean.father}" rendered="true"
+													requiredMessage="فیلد اجباری">
+													<f:validateLength maximum="100" minimum="3" />
+												</p:inputText>
+											</div>
+											<div class="col-md-3">
+												<p:inputText placeholder="متولد :"
+													value="#{shoabBean.date}" required="true"
+													style="font-family: 'IRANSansNor' !important;width: 100%; background-color: white!important;"
+													requiredMessage="فیلد اجباری" dir="rtl" />
+											</div>
+											<div class="col-md-3">
+												<p:inputText id="input" placeholder="محل تولد :"
+													style="font-family: 'IRANSansNor' !important;width: 100%; background-color: white!important;"
+													value="#{shoabBean.cityBirth}" rendered="true"
+													requiredMessage="فیلد اجباری">
+													<f:validateLength maximum="100" minimum="3" />
+												</p:inputText>
+											</div>
+
+
+
+										</div>
+										<br />
+
+										<div class="row">
+											<div class="col-md-3">
+												<p:inputMask mask="9999999999" placeholder="کد ملی :"
+													value="#{shoabBean.ssn}" required="true"
+													style="font-family: 'IRANSansNor' !important;width: 100%; background-color: white!important;"
+													requiredMessage="فیلد اجباری" dir="rtl" />
+											</div>
+											<div class="col-md-3">
+												<p:inputMask mask="9999999999"
+													placeholder="شماره گواهینامه رانندگی :"
+													value="#{shoabBean.shomareGovahiName}" required="true"
+													style="font-family: 'IRANSansNor' !important;width: 100%; background-color: white!important;"
+													requiredMessage="فیلد اجباری" dir="rtl" />
+											</div>
+											<div class="col-md-3">
+												<p:inputText id="input10" placeholder="مدرک تحصیلی :"
+													style="font-family: 'IRANSansNor' !important;width: 100%; background-color: white!important;"
+													value="#{shoabBean.madrak}" rendered="true"
+													requiredMessage="فیلد اجباری">
+													<f:validateLength maximum="100" minimum="3" />
+												</p:inputText>
+											</div>
+											<div class="col-md-3">
+												<p:inputText id="input9" placeholder="رشته تحصیلی :"
+													style="font-family: 'IRANSansNor' !important;width: 100%; background-color: white!important;"
+													value="#{shoabBean.reshte}" rendered="true"
+													requiredMessage="فیلد اجباری">
+													<f:validateLength maximum="100" minimum="3" />
+												</p:inputText>
+											</div>
+
+
+
+										</div>
+										<br />
+
+
+
+										<div class="row">
+											<div class="col-md-3">
+												<p:inputText id="input95" placeholder="شغل :"
+													style="font-family: 'IRANSansNor' !important;width: 100%; background-color: white!important;"
+													value="#{shoabBean.shogl}" rendered="true"
+													requiredMessage="فیلد اجباری">
+													<f:validateLength maximum="100" minimum="3" />
+												</p:inputText>
+											</div>
+
+											<div class="col-md-3">
+												<p:inputMask mask="99999999999" placeholder="Mobile :"
+													value="#{shoabBean.mobile}" required="true" dir="ltr"
+													style="font-family: 'IRANSansNor' !important;width: 100%; background-color: white!important;"
+													requiredMessage="فیلد اجباری" />
+											</div>
+											<div class="col-md-3">
+												<p:inputMask mask="(999)99999999" placeholder="Phone :"
+													value="#{shoabBean.phone}" required="true" dir="ltr"
+													style="font-family: 'IRANSansNor' !important;width: 100%; background-color: white!important;"
+													requiredMessage="فیلد اجباری" />
+											</div>
+
+
+
+
+
+										</div>
+										<br />
+
+										<div class="row">
+											<div class="col-md-3">
+												<p:inputText id="input14" placeholder="استان :"
+													style="font-family: 'IRANSansNor' !important;width: 100%; background-color: white!important;"
+													value="#{shoabBean.darOstan}" rendered="true"
+													requiredMessage="فیلد اجباری">
+													<f:validateLength maximum="100" minimum="3" />
+												</p:inputText>
+											</div>
+											<div class="col-md-3">
+												<p:inputText id="input13" placeholder="شهرستان :"
+													style="font-family: 'IRANSansNor' !important;width: 100%; background-color: white!important;"
+													value="#{shoabBean.darShahrestan}" rendered="true"
+													requiredMessage="فیلد اجباری">
+													<f:validateLength maximum="100" minimum="3" />
+												</p:inputText>
+											</div>
+											<div class="col-md-3">
+												<p:inputText id="input12" placeholder="شهر :"
+													style="font-family: 'IRANSansNor' !important;width: 100%; background-color: white!important;"
+													value="#{shoabBean.darShahr}" rendered="true"
+													requiredMessage="فیلد اجباری">
+													<f:validateLength maximum="100" minimum="3" />
+												</p:inputText>
+											</div>
+											<div class="col-md-3">
+												<p:inputText id="input11" placeholder="بخش / روستا :"
+													style="font-family: 'IRANSansNor' !important;width: 100%; background-color: white!important;"
+													value="#{shoabBean.darBakhsh}" rendered="true"
+													requiredMessage="فیلد اجباری">
+													<f:validateLength maximum="100" minimum="3" />
+												</p:inputText>
+											</div>
+
+
+
+										</div>
+										<br />
+
+
+										<div class="row">
+											<div class="col-md-12">
+												<p:inputTextarea id="input8" placeholder="نشانی کامل :"
+													style="font-family: 'IRANSansNor' !important;width: 100%; background-color: white!important;"
+													value="#{shoabBean.addres}" rendered="true"
+													requiredMessage="فیلد اجباری">
+													<f:validateLength maximum="100" minimum="3" />
+												</p:inputTextarea>
+											</div>
+										</div>
+										<br />
+
+
+
+										<div class="row">
+											<div class="col-md-12">
+												<p>آمادگی خود را برای همکاری با جمعیت خوب رانان در زمینه
+													های ذیل اعلام می دارم .</p>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<p:selectManyCheckbox id="em" layout="responsive"
+													value="#{shoabBean.options}"
+													style="font-family: 'IRANSansNor'; color: #333333 !important; font-size:14px;"
+													columns="3">
+													<f:selectItem itemLabel="برنامه ریزی و مدیریت"
+														itemValue="برنامه ریزی و مدیریت" />
+													<f:selectItem itemLabel="تولید محتوا"
+														itemValue="تولید محتوا" />
+													<f:selectItem itemLabel="ترجمه" itemValue="ترجمه" />
+													<f:selectItem itemLabel="جذب اسپانسر"
+														itemValue="جذب اسپانسر" />
+													<f:selectItem itemLabel="جذب نیروی انسانی"
+														itemValue="جذب نیروی انسانی" />
+													<f:selectItem itemLabel="رسانه" itemValue="رسانه" />
+													<f:selectItem itemLabel="خلاقیت و ایده پردازی"
+														itemValue="خلاقیت و ایده پردازی" />
+													<f:selectItem itemLabel="حضور فیزیکی"
+														itemValue="حضور فیزیکی" />
+													<f:selectItem itemLabel="کمک غیر نقدی"
+														itemValue="کمک غیر نقدی" />
+													<f:selectItem itemLabel="کمک مالی" itemValue="کمک مالی" />
+													<f:selectItem itemLabel="تامین فضای استقرار شعبه"
+														itemValue="تامین فضای استقرار شعبه" />
+													<f:selectItem id="si"
+														itemLabel="هماهنگی و جذب همکاری مقامات محلی"
+														itemValue="هماهنگی و جذب همکاری مقامات محلی" />
+
+												</p:selectManyCheckbox>
+											</div>
+										</div>
+										<br />
+										<div class="row">
+											<div class="col-md-12">
+												<p:inputTextarea id="input955"
+													placeholder="مزید امتنان خواهد بود در خصوص موارد انتخابی برای همکاری ، توضیحات لازم را ارایه فرمایید."
+													style="font-family: 'IRANSansNor' !important;width: 100%; background-color: white!important;"
+													value="#{shoabBean.description}" rendered="true"
+													requiredMessage="فیلد اجباری">
+													<f:validateLength maximum="5000" minimum="3" />
+												</p:inputTextarea>
+											</div>
+										</div>
+										<br />
+										<div class="row">
+											<div class="row">
+												<div class="col-md-12">
+													<p>توجه !</p>
+												</div>
+											</div>
+										</div>
+										<br />
+										<div class="row">
+											<div class="row">
+												<div class="col-md-12">
+													<p>حق عضویت ماهیانه بر اساس مصوبه ۹۷/۰۹/۲۲ هیئت مدیره
+														ماهیانه یکصد هزار ریال است که لازم است به حساب شماره
+														۸۰۵۷۱۰۲۷۸۶۸۰۸۱ نزد بانک سامان به نام جمعیت خوب رانان واریز
+														گردد .</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-md-12">
+												<p>نحوه پرداخت :</p>
+											</div>
+										</div>
+
+
+										<div class="row">
+											<div class="row">
+												<div class="col-md-12">
+													<p:selectOneRadio id="customRadio22" layout="responsive"
+														columns="3" style="font-size:14px;" required="true"
+														value="#{shoabBean.nahve}" requiredMessage="فیلد اجباری">
+														<f:selectItem itemLabel="ماهیانه" itemValue="ماهیانه" />
+														<f:selectItem itemLabel="سه ماهه" itemValue="فصلی" />
+														<f:selectItem itemLabel="سالیانه" itemValue="سالیانه" />
+													</p:selectOneRadio>
+												</div>
+											</div>
+										</div>
+
+										<h:commandButton id="saveBtn" value="ثبت" icon="ui-icon-check"
+											style="margin:0; width:100px; height:30px; font-size:18px; padding-top:0px!important; background-color:darkblue; color:white;"
+											update="pnl" ajax="true" execute="@form"
+											action="#{shoabBean.insertToShoab()}">
+										</h:commandButton>
+									</p:panel>
+								</h:form>
+
+							</div>
+						</div>
+					</div>
+					</section>
+				</div>
+			</div>
+		</ui:define>
+	</ui:composition>
+</h:body>
+</html>

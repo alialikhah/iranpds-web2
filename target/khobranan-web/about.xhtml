@@ -1,0 +1,531 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<head></head>
+<body>
+	<ui:composition template="template.xhtml">
+		<ui:define name="headt">
+			<style>
+.container.no-header {
+	padding-top: 0px !important;
+	padding-bottom: 70px;
+}
+
+.nav-tabs li a#second-tab {
+	background: none !important;
+	background-size: auto auto;
+	background-size: 48px 48px;
+}
+
+.nav-tabs li a#first-tab {
+	background: none !important;
+	background-size: auto auto;
+	background-size: 48px 48px;
+}
+
+.form-part {
+	padding: 0;
+	margin-top: 29px;
+	margin: auto !important;
+	width: 500px;
+}
+
+.covering-image {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	-webkit-transition: all 0.2s ease 0s;
+	transition: all 0.2s ease 0s;
+	z-index: 19;
+	background: rgba(255, 255, 255, 0.5) !important;
+	display: block;
+	opacity: 0;
+	visibility: hidden;
+}
+
+@media screen and (max-width : 700px) {
+	h3 {
+		padding-right: 0px !important;
+	}
+	p {
+		padding-right: 0px !important;
+		padding-left: 0px !important;
+	}
+	.nav-tabs>li>a {
+		border-radius: 0;
+		font-size: 10px !important;
+		font-weight: 600;
+		font-family: "Montserrat", Arial, Helvetica, sans-serif;
+		color: #2b2b2b;
+		background: #fff;
+		border: 0;
+		width: auto;
+		height: 10px !important;
+		padding-top: 10px !important;
+		margin: 0 10px;
+		opacity: 0.6;
+	}
+	.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover
+		{
+		color: #2b2b2b;
+		border: 0;
+		opacity: 1;
+		border-bottom: 0px solid #999 !important;
+	}
+	.nav-tabs {
+		margin-bottom: 45px;
+		padding-left: 0px;
+		padding-top: 2px !important;
+		text-align: center;
+	}
+	.nav>li>a {
+		position: relative;
+		display: block;
+		padding: 0px !important;
+		padding-top: 10px;
+	}
+	.nav-tabs {
+		margin-bottom: 5px !important;
+		padding-left: 0px;
+		padding-top: 2px !important;
+		text-align: center;
+	}
+	.form-part {
+		padding: 0;
+		margin-top: 29px;
+		margin: auto !important;
+		width: 200px !important;
+	}
+	.nav-tabs {
+		margin-bottom: 5px !important;
+		padding-left: 0px;
+		padding-top: 2px !important;
+		text-align: justify !important;
+	}
+	.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover
+		{
+		color: #2b2b2b;
+		border: 0;
+		border-bottom-width: 0px;
+		border-bottom-style: none;
+		border-bottom-color: currentcolor;
+		opacity: 1;
+		border-bottom: 0px solid #999 !important;
+		color: red;
+	}
+	.nav>li>a {
+		position: relative;
+		display: block;
+		padding: 0px !important;
+		padding-top: 10px;
+		color: green;
+	}
+}
+</style>
+		</ui:define>
+		<ui:define name="main">
+			<div class="content-wrapper">
+				<div id="content">
+
+					<section class="white">
+					<div class="container clearfix no-header" id="dvali1">
+						<div class="col-lg-12">
+							<ul id="aliul1" class="nav nav-tabs" role="tablist">
+								<li role="presentation"><a href="agency.html#first"
+									role="tab" id="first-tab" data-toggle="tab"
+									aria-controls="first">تماس با ما</a></li>
+								<li role="presentation"><a href="agency.html#second"
+									role="tab" id="second-tab" data-toggle="tab"
+									aria-controls="second">باور ها و ارزش ها</a></li>
+								<li role="presentation"><a href="agency.html#thrd"
+									role="tab" id="thrd-tab" data-toggle="tab" aria-controls="thrd">مجوز
+										فعالیت</a></li>
+								<li role="presentation"><a href="agency.html#fourth"
+									role="tab" id="fourth-tab" data-toggle="tab"
+									aria-controls="fourth">روسای کمیته های تخصصی</a></li>
+								<li role="presentation"><a href="agency.html#fifth"
+									role="tab" id="fifth-tab" data-toggle="tab"
+									aria-controls="fifth">تشکیلات سازمانی</a></li>
+								<li role="presentation"><a href="agency.html#sixth"
+									role="tab" id="sixth-tab" data-toggle="tab"
+									aria-controls="sixth">مشاوران</a></li>
+								<li role="presentation"><a href="agency.html#seventh"
+									role="tab" id="seventh-tab" data-toggle="tab"
+									aria-controls="seventh">بازرسان</a></li>
+								<li role="presentation"><a href="agency.html#eight"
+									role="tab" id="eight-tab" data-toggle="tab"
+									aria-controls="eight">اعضای هیت مدیره</a></li>
+								<li role="presentation" class="active"><a
+									href="agency.html#nineth" role="tab" id="nineth-tab"
+									data-toggle="tab" aria-controls="nineth">دیدگاه</a></li>
+							</ul>
+							<div class="tab-content">
+								<div role="tabpanel" class="tab-pane fade" id="first"
+									aria-labelledBy="first-tab">
+									<div class="row">
+										<div class="col-md-12">
+											<form class="form-part" method="post"
+												action="http://weibergmedia.com/demos/ta/contact.php"
+												name="contactform" id="contactform" autocomplete="off"
+												dir="rtl">
+												<input name="نام و نام خانوادگی" type="text" id="name"
+													size="30" title="نام و نام خانوادگی" dir="rtl"
+													style="text-align: right;" /> <input name="ایمیل"
+													type="text" id="email" size="30" title="ایمیل" dir="rtl"
+													style="text-align: right;" /> <input name="شماره همراه"
+													type="text" id="email" size="30" title="موبایل" dir="rtl"
+													style="text-align: right;" /> <input name="موضوع پیام"
+													type="text" id="email" size="30" title="موضوع پیام"
+													dir="rtl" style="text-align: right;" />
+												<textarea name="comments" cols="40" rows="3" id="comments"
+													title="پیام خود را وارد نمایید..." dir="rtl"
+													style="text-align: right;"></textarea>
+												<div class="input-wrapper clearfix">
+													<span id="message"></span>
+													<div class="clear"></div>
+													<input type="submit" class="send-btn" value="ارسال"
+														id="submit" name="Submit" disabled="true" />
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="second"
+									aria-labelledBy="second-tab">
+									<div class="row">
+										<div class="col-md-12"
+											style="direction: rtl; text-align: justify;">
+											<p class="ph" style="padding-right: 200px;">ماهیت</p>
+											<p style="padding-right: 200px; padding-left: 200px;">جمعیت
+												خوب رانان، یک نهاد و تشکل غیر سیاسی، غیر انتفاعی و غیر دولتی
+												است .این جمعیت تحقیق، برنامه ریزی و فرهنگ سازی را برای ترغیب
+												به رانندگی امن و بالابردن آگاهی عمومی به حقوق شهروندی در
+												حوزه ترافیک به عهده دارد. اجرای راهکارهای تشویقی که زمینه
+												ساز اصلاح رفتار شهروندان و متناسب با شأن ملت بزرگ ما باشد از
+												سوی این جمعیت دنبال می شود. «جمعیت خوب رانان» مشوق تبعیت از
+												اصول مدرن شهروندی است و با آموزش مستمر و به روز از طریق
+												رسانه های عمومی و شبکه های اجتماعی ارتقا کیفیت رانندگی و
+												کاهش ضایعات و تلفات انسانی را در پرتو قانونمندی و رعایت
+												مقررات ملاک عمل قرار می دهد. ما بر این باوریم که در دفاع از
+												حقوق شهروندی و حفظ آرامش همنوعان و آیندگان، همگان مسئولند.</p>
+											<br />
+											<p class="ph" style="padding-right: 200px;">ماموریت</p>
+											<p style="padding-right: 200px; padding-left: 200px;">ارج
+												نهادن به رانندگی خوب و قانونمند با تشکیل باشگاه خوب رانان
+												بمنظور تشویق و ایجاد جامعه ایمن و برخوردار از آرامش پژوهش و
+												برنامه ریزی و بررسی عوامل موثر در خوب راندن افرایش آگاهی از
+												حقوق شهروندی و آموزش مستمر و اثربخش در زمینه رانندگی ایمن
+												شناسایی و معرفی رفتارهای ترافیکی درست شهروندان ترغیب و تشویق
+												شهروندان به رعایت رفتارهای شایسته ترافیکی تشویق صاحب نظران و
+												دست اندرکاران حوزه فرهنگ ترافیک به هم افزایی و مشارکت در
+												ارتقا فرهنگ رانندگی همکاری و هماهنگی با سازمان های ذی ربط در
+												برگزاری کمپین های هم راستا بسترسازی به منظور مشارکت مردم در
+												شناسایی و معرفی عوامل حادثه خیز به منظور جمع بندی و ارایه
+												گزارش به سازمان های ذی ربط و پیگیری مطالبات مطالعه و بهره
+												برداری از تجربیات کشورهای پیشرو در فرهنگ غنی ترافیک</p>
+											<br />
+											<p class="ph" style="padding-right: 200px;">چشم انداز</p>
+											<p style="padding-right: 200px; padding-left: 200px;">ارتقا
+												رتبه ی رانندگی ایمن، کاهش تلفات جانی و مالی و ارتقا رنکینگ
+												جهانی همسنگ با پیشینه ی درخشان ملت ایران</p>
+											<br />
+											<p class="ph" style="padding-right: 200px;">اهداف جمعیت
+												عبارت اند از</p>
+											<p style="padding-right: 200px; padding-left: 200px;">الف:
+												كلیات ایجاد تغییر و تحول در فرهنگ رانندگی در راستای جامعه ی
+												بهینه به منظور تقلیل چشمگیر ضایعات و تلفات انسانی و مالی و
+												همچنین ارتقا وضعیت کشور در بهبود کیفیت و امنیت ترافیک،
+												متناسب با پیشینه ی درخـشان ایران زمـین با بهره گیری از ابزار
+												های تشویقی و مبتنی بر فرهنگ سازی ب: روش اجرای هدف مطـالعه و
+												پژوهـش از نـمونه های موفق جـهانی در فرهنگ سازی ترافیکی و
+												طراحی الگوی متناسب با فرهنگ، عقـیده، عرف، قانون و مذهب رسمی
+												کشور، اشاعه ی فرهنگ غنی و بومی سازی شـده ی ترافیـکی با بهره
+												گیری از رسانه هـای جمـعی و ابزارهای اطلاع رسانی و تبلیغاتی،
+												آمـوزش، طراحی و اجـرای روش های تشویقی و انگیزشی برای تاثیر
+												گذاری روز افزون و تغییر فرهنگی مورد نظر در جامعه</p>
+											<br />
+											<p class="ph" style="padding-right: 200px;">فعالیت ها</p>
+											<p style="padding-right: 200px; padding-left: 200px;">در
+												راستای دستیابی به اهداف عالیه و استراتژیک جمعیت و تحقق آنها،
+												فعالیت های زیر انجام خواهد شد : شناسایی، معرفی و تشویق
+												رانندگان با شخصیت که با رانندگی امن، آرامش را به جامعه هدیه
+												می دهند فرهنگ سازی به منظور عدم پذیرش اجتماعی رانندگی
+												نامطلوب تشویق فیلم سازان به استفاده از جلوه های غنی فرهنگی
+												خصوصا در زمینه ی ترافیکی و بزرگنمایی آن جهت الگوسازی در
+												جامعه همکاری با وزارت آموزش و پرورش برای تولید محتوای درسی
+												به منظور نهادینه سازی فرهنگ مناسب ترافیکی اطلاع رسانی و
+												آموزش در خصوص قوانین مرتبط با ترافیک به اقشار مختلف جامعه
+												متناسب با نوع کاربری (عابرپیاده، دوچرخه سوار، موتورسوار،
+												تاکسیران، اتوبوسران، باربری و غیره) ایجاد، آموزش و توسعه
+												فرهنگ صحیح امدادرسانی به آسیب دیدگان حوادث رانندگی فرهنگ
+												سازی و بسترسازی فیزیکی به منظور تسهیل در رعایت قوانین
+												راهنمایی و رانندگی توسط مردم (پارک صحیح خودرو، مسیریابی به
+												موقع در خروجی ها، توجه به چراغ راهنمایی و رانندگی، سرعت
+												گیرها و غیره) فرهنگ سازی و بسترسازی به منظور گرایش جامعه به
+												استفاده از حمل و نقل عمومی مطالعه و پژوهش به منظور ارائه راه
+												کار به سازمان های ذی ربط جهت ارتقا فرهنگ ترافیکی مطالعه و
+												انتخاب الگوهای مناسب خارجی و همچنین بهره برداری از تجارب
+												دیگر کشورها در ارتقا فرهنگ ترافیک تعاطی افکار و همکاری با
+												پلیس راهور به منظور بهبود شرایط حضور در جاده ها و اعمال
+												منطقی و اجرایی قانون پژوهش و ارائه راهکارهای کاربردی جهت
+												هدایت منطقی و صحیح هیجان های نوجوانان و جوانان در حوزه
+												رانندگی</p>
+										</div>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="thrd"
+									aria-labelledBy="thrd-tab">
+									<div class="row">
+
+
+										<div class="col-md-12 cm" style="text-align: center;">
+											<a href="resources/images/mojavez_fillet.png"
+												data-title="مجوز" data-fancybox-group="group1" class="popup">
+												<figure class="images"> <img
+													src="resources/images/mojavez_fillet.png" alt=""
+													style="width: 300px !important; height: 200px !important; margin: auto;" />
+												<div class="covering-image" id="ci2" style="margin: auto;">
+													<div class="info-box-content">
+														<div class="parent">
+															<div class="child">
+																<ul class="social-list clearfix">
+																	<li><span class="circled"><i
+																			class="fa fa-search"></i>
+																			<div class="circle-anim"></div> </span></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+												</figure>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="fourth"
+									aria-labelledBy="fourth-tab">
+									<div class="row">
+										<div class="col-md-4 cm" style="text-align: center;">
+											<img src="resources/game/mosavi.jpg" alt=""
+												style="border-radius: 15px; width: 300px !important; height: 300px !important; margin: auto;" />
+											<p class="ph">سید مسلم موسوی</p>
+											<p>رئیس کمیته پژوهش و آموزش</p>
+											<p>دکتری مدیریت آموزش</p>
+											<p style="padding-bottom: 40px !important;">s.moosavi@iranpds.com</p>
+										</div>
+									<div class="col-md-4 cm" style="text-align: center;">
+										<img src="resources/game/noghre.jpg" alt=""
+											style="border-radius: 15px; width: 300px !important; height: 300px !important; margin: auto;" />
+										<p class="ph">کیوان نقره کار</p>
+										<p>رئیس کمیته حامیان</p>
+										<p>گرایش کسب و کار MBA کارشناسی ارشد</p>
+										<p style="padding-bottom: 40px !important;">noghrekar@iranpds.com</p>
+									</div>
+									<div class="col-md-4 cm" style="text-align: center;">
+										<img src="resources/game/ghafari.jpg" alt=""
+											style="border-radius: 15px; width: 300px !important; height: 300px !important; margin: auto;" />
+										<p class="ph">عباس غفاری</p>
+										<p>رئیس کمیته تشکیلات و توسعه</p>
+										<p>گرایش منابع انسانی DBA دکترای</p>
+										<p style="padding-bottom: 40px !important;">ghafari@iranpds.com</p>
+									</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6 cm" style="text-align: center;">
+											<img src="resources/images/aza/saatchi.jpg" alt=""
+												style="border-radius: 15px; width: 300px !important; height: 300px !important; margin: auto;" />
+											<p class="ph">حسین ساعت چی یزدی</p>
+											<p>رئیس کمیته حقوقی و قرارداد ها</p>
+											<p>کارشناسی ارشد حقوق خصوصی</p>
+											<p style="padding-bottom: 40px !important;">satchi@iranpds.com</p>
+										</div>
+										<div class="col-md-6 cm" style="text-align: center;">
+											<img src="resources/game/rastegari.jpg" alt=""
+												style="border-radius: 15px; width: 300px !important; height: 300px !important; margin: auto;" />
+											<p class="ph">محمد رستگاری</p>
+											<p>رئیس کمیته ارتباطات و تبلیغات</p>
+											<p>کارشناسی ارشد تولیدات فرهنگی</p>
+											<p style="padding-bottom: 40px !important;">rastegari@iranpds.com</p>
+										</div>
+									</div>
+
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="fifth"
+									aria-labelledBy="fifth-tab">
+									<div class="row" style="padding-top: 15px !important;">
+										<div class="col-md-12">
+											<img src="resources/images/nemodar.png" alt="" />
+										</div>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="sixth"
+									aria-labelledBy="sixth-tab">
+									<div class="row">
+
+										<div class="col-md-4 cm" style="text-align: center;">
+											<img src="resources/images/aza/ezadi.jpg" alt=""
+												style="border-radius: 15px; width: 300px !important; height: 300px !important; margin: auto;" />
+											<p class="ph">نادیا ایزی</p>
+											<p>مشاور مدیر عامل</p>
+											<p>دکتری مدیریت منابع انسانی</p>
+											<p style="padding-bottom: 40px !important;">iezi@iranpds.com</p>
+										</div>
+
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="seventh"
+									aria-labelledBy="seventh-tab">
+									<div class="row">
+										<div class="col-md-6 cm" style="text-align: center;">
+											<img src="resources/images/aza/esfandani.jpg" alt=""
+												style="border-radius: 15px; width: 300px !important; height: 300px !important; margin: auto;" />
+											<p class="ph">جواد اسفندانی</p>
+											<p>بازرس علی البدل</p>
+											<p>فوق لیسانس مدیریت شهری</p>
+											<p style="padding-bottom: 40px !important;">esfardani@iranpds.com</p>
+										</div>
+										<div class="col-md-6 cm" style="text-align: center;">
+											<img src="resources/images/aza/salek.jpg" alt=""
+												style="border-radius: 15px; width: 300px !important; height: 300px !important; margin: auto;" />
+											<p class="ph">محمد رضا سالک اردکانی</p>
+											<p>بازرس اصلی</p>
+											<p>کارشناس نساجی</p>
+											<p style="padding-bottom: 40px !important;">salek@iranpds.com</p>
+										</div>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="eight"
+									aria-labelledBy="eight-tab">
+									<div class="row">
+										<div class="col-md-6 cm" style="text-align: center;">
+											<img src="resources/images/farnam.png" alt=""
+												style="border-radius: 15px; width: 300px !important; height: 300px !important; margin: auto;" />
+											<p class="ph">ولی فرنام</p>
+											<p>عضو هیات مدیره و مدیر عامل</p>
+											<p>دانشجوی دکترای تخصصی حقوق خصوصی</p>
+											<p style="padding-bottom: 40px !important;">farnam@iranpds.com</p>
+										</div>
+										<div class="col-md-6 cm" style="text-align: center;">
+											<img src="resources/images/aza/sefid.jpg" alt=""
+												style="border-radius: 15px; width: 300px !important; height: 300px !important; margin: auto;" />
+											<p class="ph">غلامعلی سفید</p>
+											<p>رئیس هیئت مدیره</p>
+											<p>کارشناسی ارشد مدیریت دولتی</p>
+											<p style="padding-bottom: 40px !important;">sefid@iranpds.com</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4 cm" style="text-align: center;">
+											<img src="resources/images/aza/hadadi.jpg" alt=""
+												style="border-radius: 15px; width: 300px !important; height: 300px !important; margin: auto;" />
+											<p class="ph">مصطفی حدادی</p>
+											<p>عضو هیئت مدیره</p>
+											<p>کارشناسی تبلیغات</p>
+											<p style="padding-bottom: 40px !important;">hadadi@iranpds.com</p>
+										</div>
+										<div class="col-md-4 cm" style="text-align: center;">
+											<img src="resources/images/aza/kabosi.jpg" alt=""
+												style="border-radius: 15px; width: 300px !important; height: 300px !important; margin: auto;" />
+											<p class="ph">محمود تاجر</p>
+											<p>عضو هیئت مدیره و خزانه دار</p>
+											<p>کارشناسی ارشد حقوق خصوصی</p>
+											<p style="padding-bottom: 40px !important;">tajer@iranpds.com</p>
+										</div>
+
+										<div class="col-md-4 cm" style="text-align: center;">
+											<img src="resources/images/aza/alaei.jpg" alt=""
+												style="border-radius: 15px; width: 300px !important; height: 300px !important; margin: auto;" />
+											<p class="ph">عباس میر علائی</p>
+											<p>نایب رئیس هیئت مدیره</p>
+											<p>کارشناسی دانشکده افسری</p>
+											<p style="padding-bottom: 40px !important;">miralaei@iranpds.com</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6 cm" style="text-align: center;">
+											<img src="resources/images/aza/bahrami.jpg" alt=""
+												style="border-radius: 15px; width: 300px !important; height: 300px !important; margin: auto;" />
+											<p class="ph">پریوش بهرامی</p>
+											<p>عضو علی البدل هیئت مدیره</p>
+											<p>کارشناسی ارشد مدیریت دولتی</p>
+											<p style="padding-bottom: 40px !important;">bahrami@iranpds.com</p>
+										</div>
+										<div class="col-md-6 cm" style="text-align: center;">
+											<img src="resources/images/aza/kavosi.jpg" alt=""
+												style="border-radius: 15px; width: 300px !important; height: 300px !important; margin: auto;" />
+											<p class="ph">منصور کاوسی</p>
+											<p>عضو علی البدل هیئت مدیره</p>
+											<p>کارشناسی حقوق</p>
+											<p style="padding-bottom: 40px !important;">kavoosi@iranpds.com</p>
+										</div>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane fade in active" id="nineth"
+									aria-labelledBy="nineth-tab">
+									<div class="row">
+										<div class="col-md-6">
+											<img src="resources/images/farnam.png" alt="" />
+										</div>
+										<div class="col-md-6 add-padding"
+											style="text-align: justify; direction: rtl;">
+											<p class="ph" style="text-align: center;">
+												به نام آنکه جان را فکرت آموخت <br /> چراغ دل به نور جان
+												برافروخت
+											</p>
+											<p>
+												پیشینه ی شگرف و تمدن هفت هزار ساله ی ایران زمین، نگاه
+												جهانیان را مبهوت این کشور پهناور و سرشار از زیبایی های
+												خدادادی نموده و منش نیکو و کردار مهرآمیز و مهربانانه مردم
+												این دیار، بر جلوه های چشم نواز آن، صد چندان افزوده است. به
+												گونه ای که هیچ کلام بغض آلوده و رنگ گرفته از رشک و کین
+												بدخواهان سیه دل این ملک و در هیچ زمانی، نتوانسته است بر فر و
+												شکوه ش، خدشه ای وارد سازد. با این همه، آن چه در نخستین لحظات
+												ورود گردشگران خارجی، نظرشان را جلب و تعجب شان را بر می
+												انگیزد، ناهمخوانی و همسنگ نبودن فرهنگ گرانمایه و سترگ مردمان
+												این دیار با رفتار ترافیکی ایشان است. کنش های ناخوشایندی که
+												همپای خلل وارد کردن به باور جهانیــان از مدنیت ایرانیـان،
+												هرساله سبب ساز زیان های بی شمار، سنگین و جبران ناپذیر جانی و
+												مالی می شوند. « <b> جمعیت خوب رانان </b> » امیدوار به
+												پشتیبانی، همراهی و همگامی همه ی هموطنان و یاوری های
+												مهرورزانه بزرگان و اکابر عرصه های علمی، فرهنگی، هنری، ورزشی
+												و اجتماعی، می کوشد تا حرکتی مردمی را در راستای بهینه سازی و
+												افزایش فرهنگ رانندگی، ایجاد امنیت ترافیکی و کاستن خسارت ها و
+												پیامدهای اجتماعی ناشی از تصادفات، ساماندهی نماید. باور
+												درونی، همفکری، همدلی و شور ملی، مشعلی فروزنده و فرا راه این
+												پویش گرانقدر مردمی برای ایجاد دگرگونی بنیادی در شیوه رانندگی
+												و فرهنگ ترافیکی خواهد بود، آن گونه که شایسته، سزاوار و در
+												خور شخصیت ایرانی است و بی گمان عزت ایرانیان را در پی خواهد
+												داشت. پیشاپیش شایسته است تاسپاس خود را پیشکش همه ی
+												بزرگوارانی نمایم که «جمعیت خوب رانان» را در مسیر دستیابی به
+												هدف والا و انجام رسالت ملی آن، یاورانی شکیبا و همپایند.
+											</p>
+											<p class="ph" style="text-align: center !important;">
+												<b> ولی فرنام <br />عضو هیئت مدیره و مدیر عامل
+												</b>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					</section>
+
+
+
+
+
+				</div>
+				<!-- end content -->
+			</div>
+			<!-- end content-wrapper -->
+		</ui:define>
+	</ui:composition>
+</body>
+</html>

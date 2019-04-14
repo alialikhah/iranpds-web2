@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head></h:head> 
+<body> 
+<ui:composition template="template.xhtml">
+<ui:define name="headt">
+<style>
+.container.no-header {
+    padding-top: 35px !important;
+    padding-bottom: 70px;
+}
+
+.form-part {
+    padding: 0;
+    margin-top: 29px;
+    margin: auto!important;
+    width: 500px;
+}
+
+			@media  screen and (max-width : 700px)
+			{
+							p{
+				padding-right: 0px!important;
+				}
+				p{
+				padding-right: 0px!important;
+				padding-left: 0px!important;
+				}
+
+.form-part {
+    padding: 0;
+    margin-top: 29px;
+    margin: auto !important;
+    width: 200px !important;
+}
+
+			}
+</style>
+</ui:define>
+<ui:define name="main">
+<div class="content-wrapper">
+    <div id="content">
+           
+     <section class="white">
+        <div class="container clearfix no-header" id="dvali1" >
+          <div class="col-lg-12">
+          <div  class="tab-pane fade in active" id="eight">
+                
+                 <div class="row">
+                  <div class="col-md-12">
+          <form class="form-part" method="post" action="http://weibergmedia.com/demos/ta/contact.php" name="contactform" id="contactform" autocomplete="off" dir="rtl">
+            <input name="نام و نام خانوادگی" type="text" id="name" size="30" title="نام و نام خانوادگی" dir="rtl" style="text-align: right;"/>
+            <input name="ایمیل" type="text" id="email" size="30" title="ایمیل" dir="rtl" style="text-align: right;"/>
+            <input name="شماره همراه" type="text" id="email" size="30" title="موبایل" dir="rtl" style="text-align: right;"/>
+            <input name="موضوع پیام" type="text" id="email" size="30" title="موضوع پیام" dir="rtl" style="text-align: right;"/>
+            <textarea name="comments" cols="40" rows="3" id="comments" title="پیام خود را وارد نمایید..." dir="rtl" style="text-align: right;"></textarea>
+            <div class="input-wrapper clearfix"> <span id="message"></span>
+              <div class="clear"></div>
+              <input type="submit" class="send-btn" value="ارسال" id="submit" name="Submit" disabled="true" />
+            </div>
+          </form>
+                  </div>
+                </div>
+              
+              </div>
+          </div>
+          </div>
+          </section>
+          </div>
+          </div>
+</ui:define>
+</ui:composition>
+</body> 
+</html>
